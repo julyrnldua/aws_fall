@@ -1,0 +1,7 @@
+<h1>Show Everything</h1>
+
+<% @p.each do |x|%>
+<h2><a href="/one_post/<%=x.id%>"> <%=x.id%>. <%=x.title%></a></h2>
+<%end%>
+
+<h3><a href="/new">Post</a></h3>

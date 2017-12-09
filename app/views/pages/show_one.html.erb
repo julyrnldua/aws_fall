@@ -1,0 +1,20 @@
+<h1>Title: <br> <%=@onepost.title%></h1>
+<br>
+
+
+<br><br><br><br>
+<hr>
+<form method="post" action="/<%=@onepost.id%>/comment/create">
+    <p>Comment:</p>
+    <input type="text" name="input_comment">
+    <input type="submit" name="submit">
+</form>
+
+<hr>
+<% @how.each do |c| %>
+   <p> [방법] <%= c.comment %> <a href="/comment/delete/<%=@onepost.id%>/<%=c.id%>"
+   data-method="post" data-confirm="Commente delete?">[x]</a></p>
+<%end%>
+</hr>
+<br>
+

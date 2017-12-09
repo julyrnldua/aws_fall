@@ -1,0 +1,7 @@
+<h1>Edit Your Post Here</h1>
+<form action="/update/<%=@editing_post.id%>" method="post">
+<p>요리 이름:</p>
+<input type="text" name="input_title" value ="<%=@editing_post.title%>">
+<p>Update</p>
+<input type="submit">
+</form>
